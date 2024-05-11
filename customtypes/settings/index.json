@@ -1,0 +1,35 @@
+{
+  "format": "custom",
+  "id": "settings",
+  "label": "settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "favicon": {
+        "type": "Image",
+        "config": {
+          "label": "favicon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "analytcs": {
+        "type": "Group",
+        "config": {
+          "label": "Analytcs",
+          "repeat": true,
+          "fields": {}
+        }
+      }
+    }
+  }
+}
