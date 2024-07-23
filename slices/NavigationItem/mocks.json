@@ -1,0 +1,41 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"name": {
+				"__TYPE__": "FieldContent",
+				"value": "band",
+				"type": "Text"
+			},
+			"link": {
+				"__TYPE__": "FieldContent",
+				"value": "lucky",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "strength",
+							"type": "Text"
+						}
+					],
+					[
+						"link",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "any",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

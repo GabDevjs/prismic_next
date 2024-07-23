@@ -7,8 +7,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"yarn:next:dev\" \"yarn:slicemachine\" --names \"*,*\" --prefix-colors \"yellow,cyan\"",
-    "build": "next build && next-sitemap",
+    "dev": "concurrently \"yarn:next:dev -p 3001\" \"yarn:slicemachine\" --names \"*,*\" --prefix-colors \"yellow,cyan\"",
+    "build": "tsc --noEmit && next build && next-sitemap",
     "build:production": "next lint && tsc --noEmit && yarn build && next-sitemap",
     "next:dev": "next dev",
     "start": "next start",
