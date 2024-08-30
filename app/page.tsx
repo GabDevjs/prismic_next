@@ -13,7 +13,6 @@ function queryPage() {
 
 export async function generateMetadata() {
   const page = await queryPage();
-
   
   return {
     title: page.data.meta_title,
