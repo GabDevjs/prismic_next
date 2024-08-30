@@ -7,7 +7,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"yarn:next:dev -p 3001\" \"yarn:slicemachine\" --names \"*,*\" --prefix-colors \"yellow,cyan\"",
+    "dev": "concurrently \"yarn:next:dev\" \"yarn:slicemachine\" --names \"*,*\" --prefix-colors \"yellow,cyan\"",
     "build": "tsc --noEmit && next build && next-sitemap",
     "build:production": "next lint && tsc --noEmit && yarn build && next-sitemap",
     "next:dev": "next dev",
@@ -19,14 +19,23 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.3",
     "@prismicio/client": "^7.4.1",
     "@prismicio/next": "^1.5.0",
     "@prismicio/react": "^2.7.4",
+    "@radix-ui/react-icons": "^1.3.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "concurrently": "^8.2.2",
+    "framer-motion": "^11.3.30",
     "next": "14.2.3",
     "next-sitemap": "^4.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "react-toastify": "^10.0.5",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@slicemachine/adapter-next": "^0.3.38",
